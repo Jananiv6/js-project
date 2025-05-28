@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Task Management</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary-color: #ff0147;
+      --secondary-color: #212429;
+      --text-light: #d1d5db;
+      --white: #ffffff;
+      --max-width: 1200px;
+    }
+
+    /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } */
+/* 
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color:lightyellow;
+      color: var(--secondary-color);
+    } */
+     
+    .header{
+      margin:10px;
+      margin-left: 100px;
+      font-size: 2rem;
+      color:#212429;
+    }
+    .about-section {
+      display: flex;
+      align-items: center;
+      /* max-width: var(--max-width); */
+      padding: 150px 0px 150px 150px;
+      justify-content: space-between;
+    }
+    /* .about-section img{
+      margin-right: 50px;
+    } */
+     .about-section .text
+     {
+      /* margin-top:10px; */
+      padding-left: 200px;
+     }
+    .about-section h2{
+      font-size:100px;
+      color:darkcyan;
+    }
+    .about-section p {
+      padding-top:30px;
+      font-size : 20px;
+      line-height: 2;
+      margin-bottom: 2rem;
+    }
+ 
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+ 
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="header">
+    <h2>About </h2>
+  </div>
+  <section class="about-section">
+    <img src="WhatIsTaskMgmt.jpg" alt=""/>
+    <div class="text">
+    <h2>Introduction to Task Management</h2>
+    <p>
+     Task management is the process of overseeing a task through its lifecycle. 
+    It involves planning,<br> testing, tracking, and reporting.
+    Task management can help individuals achieve goals or enable<br> groups of individuals 
+    to collaborate and share knowledge for the accomplishment of collective<br> goals.
+    Tasks are also differentiated by complexity, from low to high.
+    </p>
+    </div>
+ 
+  </section>
+ 
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal(".about-section h2", {
+      distance: "50px",
+      origin: "right",
+      duration: 1000,
+    });
+    ScrollReveal().reveal(".about-section img", {
+      distance: "50px",
+      origin: "left",
+      duration: 1000,
+    });
+
+    ScrollReveal().reveal(".about-section p", {
+      distance: "40px",
+      origin: "bottom",
+      duration: 600,
+      interval: 200,
+    });
+
+    
+  </script>
+</body>
+</html>
