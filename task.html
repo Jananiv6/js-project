@@ -125,9 +125,8 @@
     display: flex;
     /* align-content:space-around; */
     padding-left: 0%;
-    
-
   }
+   
     h1 {
         font-size: 1.5rem;
     }
@@ -146,14 +145,20 @@
       gap:10px;
     } */
 
-    button {
+    #add-btn {
 
-        font-size: 12px;
+        font-size: 15px;
         padding: 0.4em;
+        margin-left:30px;
         
     }
+    button{
+      padding: 0.6em;
+      font-size:12px;
+    }
     .task-list{
-      font-size: 13px;
+      font-size: 10px;
+      padding-right:60px;
     }
 
     .task-input{
@@ -162,6 +167,7 @@
     .priority-select {
         font-size: 14px;
         width: 80px;
+        height: 30px;
       
     }
 }
@@ -188,7 +194,7 @@
       <option value="Medium">Medium</option>
       <option value="Low">Low</option>
     </select>
-    <button onclick="addTask()">Add Task</button>
+    <button onclick="addTask()" id="add-btn">Add Task</button>
 
     <h2>View Tasks</h2>
     <ul id="taskList" class="task-list"></ul>
