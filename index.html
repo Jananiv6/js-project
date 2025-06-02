@@ -239,18 +239,21 @@ nav .nav_header{
   nav {
     /* padding: 0.8rem; */
     text-align: left;
+     
   }
   .navbar{
+  overflow: hidden;
   /* background-position: center center; */
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("background1.jpg");
-  width:150%;
-  height:50%;
+  width:130%;
+  /* height:50%; */
   
 }
 
 .header_image img{
+
     width: 70%;
     max-width: 550px;
     /* max-height: 1000px; */
@@ -288,6 +291,7 @@ nav .nav_header{
   }
 
   .nav_links.open {
+    flex-direction: column;
     /* display: flex; */
     visibility: visible;
     transform: translateY(0);
@@ -313,6 +317,7 @@ nav .nav_header{
     width: 50px;
   }
 .head_container{
+  overflow: hidden;
   flex-direction: column;
   line-height:2.0rem;
   margin-left:10px;
@@ -348,6 +353,7 @@ nav .nav_header{
   /* color:crimson; */
 }
 .about-section {
+  /* overflow: hidden; */
   flex-direction:column;
   display: flex;
   align-items: center;
@@ -358,16 +364,16 @@ nav .nav_header{
 .about-section img{
  width:500x;
  height:300px;
- padding-left:200px;
+ padding-left:100px;
 }
  .about-section .text
  {
   /* margin-top:10px; */
-  padding-left: 60px;
-  /* text-align:center; */
+  padding-left: 100px;
+  text-align:center;
  }
 .about-section h2{
-  padding-top:30px;
+  padding-top:25px;
   text-align:center;
   font-size:30px;
   color:darkcyan;
@@ -375,7 +381,7 @@ nav .nav_header{
 .about-section p {
   text-align:center;
   padding-top:40px;
-  font-size : 20px;
+  font-size : 15px;
   /* line-height: 2rem; */
   /* margin-bottom: 1rem; */
 }
