@@ -305,7 +305,7 @@
   window.editTask = function(id) {
     // const newDescription = prompt("Edit task description:");
     const newPriority = prompt("Edit priority (Low, Medium, High):");
-    if (newDescription && newPriority) {
+    if ( newPriority) {
       tasks = tasks.map(task =>
         task.id === id ? { ...task,   priority: newPriority } : task
       );
